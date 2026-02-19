@@ -1,13 +1,20 @@
-# Eldritch-Pax Kvantum Theme
+# Eldritch Theme Ports
 
-A [Kvantum](https://github.com/tsujan/Kvantum) theme combining the **Eldritch** color palette with **Pax-Kvantum**'s translucency and blur effects.
+[Eldritch](https://github.com/eldritch-theme/eldritch) Lovecraftian horror color palette ported to various desktop theming engines.
 
 ![Eldritch](https://img.shields.io/badge/Eldritch-212337?style=for-the-badge&logo=data:image/svg+xml;base64,&logoColor=37f499)
 ![Kvantum](https://img.shields.io/badge/Kvantum-Qt_Theme-04d1f9?style=for-the-badge)
+![Rewaita](https://img.shields.io/badge/Rewaita-GTK4_Theme-37f499?style=for-the-badge)
 
-## About
+## Included Themes
 
-This theme brings the [Eldritch](https://github.com/eldritch-theme/eldritch) Lovecraftian horror color palette to Qt applications via Kvantum, built on top of the excellent Pax-Kvantum theme by l4k1.
+### Eldritch-Pax (Kvantum)
+
+Qt theme combining the Eldritch palette with **Pax-Kvantum**'s translucency and blur effects. Built on the excellent Pax-Kvantum theme by l4k1.
+
+### Eldritch (Rewaita)
+
+GTK4/libadwaita theme for the [Rewaita](https://github.com/swordpuffin/rewaita) theme manager.
 
 ### Features
 
@@ -33,30 +40,38 @@ This theme brings the [Eldritch](https://github.com/eldritch-theme/eldritch) Lov
 
 ## Installation
 
-### Manual
+### Kvantum (Eldritch-Pax)
 
 1. Clone or download this repository
-2. Copy the `Eldritch-Pax` folder to your Kvantum themes directory:
+2. Copy the theme to your Kvantum directory:
 
 ```bash
 mkdir -p ~/.config/Kvantum/Eldritch-Pax
 cp Eldritch-Pax.kvconfig Eldritch-Pax.svg ~/.config/Kvantum/Eldritch-Pax/
 ```
 
-3. Open **Kvantum Manager**
-4. Select **Eldritch-Pax** from the theme list
-5. Click **Use this theme**
+3. Open **Kvantum Manager**, select **Eldritch-Pax**, and click **Use this theme**
 
-### Requirements
+**Requires:** [Kvantum](https://github.com/tsujan/Kvantum) and a compositor with blur support (Niri, Hyprland, KWin, etc.)
 
-- [Kvantum](https://github.com/tsujan/Kvantum) (Qt theme engine)
-- A compositor with blur support (Niri, Hyprland, KWin, etc.)
+### Rewaita (GTK4/libadwaita)
+
+1. Copy the CSS file to Rewaita's dark themes directory:
+
+```bash
+cp "rewaita/Eldritch 🐙.css" ~/.var/app/io.github.swordpuffin.rewaita/data/dark/
+```
+
+2. Restart Rewaita and select **Eldritch 🐙** from the dark theme list
+
+**Requires:** [Rewaita](https://github.com/swordpuffin/rewaita) (Flatpak)
 
 ## Credits
 
 - **[Eldritch Theme](https://github.com/eldritch-theme/eldritch)** - Color palette by the Eldritch community
-- **[Pax-Kvantum](https://github.com/nicman23/Kvantum-Themes)** - Base theme structure by l4k1
+- **[Pax-Kvantum](https://github.com/nicman23/Kvantum-Themes)** - Base Kvantum theme structure by l4k1
 - **[Kvantum](https://github.com/tsujan/Kvantum)** - Qt theme engine by tsujan
+- **[Rewaita](https://github.com/swordpuffin/rewaita)** - GTK4/libadwaita theme manager
 
 ## License
 
